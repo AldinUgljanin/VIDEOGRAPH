@@ -1,0 +1,221 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #100028;
+    color: white;
+    font-family: "Roboto", sans-serif;
+}
+
+header{
+    height: 650px;
+    padding-top: 30px;
+    background-image: url(img/header_background.webp);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+}
+
+p{
+    color: #ADADAD;
+}
+
+.centar{
+    width: 70%;
+    margin: auto;
+}
+
+.general_button{
+    display: inline-block;
+    position: relative;
+    text-decoration: none;
+    letter-spacing: 2px;
+    color: white;
+    padding: 14px 32px 12px;
+    font-size: 20px;
+    z-index: 1;
+}
+
+.general_button::after{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 30px;
+    width: 30px;
+    border-left: 2px solid #00bfe7;
+    border-top: 2px solid #00bfe7;
+    content: "";
+    z-index: -1;
+}
+
+.general_button::before{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    height: 30px;
+    width: 30px;
+    border-right: 2px solid #00bfe7;
+    border-bottom: 2px solid #00bfe7;
+    content: "";
+    z-index: -1;
+}
+
+/*
+ * TODO - make animation after hovering a button
+.general_button:hover{
+    border: 2px solid #00bfe7;
+}
+*/
+
+
+.links{
+    padding: 5px 10px 0px 10px;
+    border-right: 0.5px solid grey;
+}
+
+.links span{
+    margin: 0 10px;
+    padding-bottom: 5px;
+}
+
+.links span:nth-child(1){
+    border-bottom: 2px solid #00bfe7;
+}
+
+.links span:hover{
+    border-bottom: 2px solid #00bfe7;
+}
+
+.icons{
+    padding: 5px 10px 0px 10px;
+}
+
+.icons i{
+    color: white;
+    margin: 0 10px;
+}
+
+.header_menu{
+    margin-top: 40px;
+    height: 50px;
+    width: 100%;
+    background-color: #4C4C4C;
+    position: relative;
+}
+
+.menu_button{
+    float: right;
+    margin: 10px;
+    padding: 5px;
+    background-color: #222222;
+}
+
+.menu_button h3{
+    display: inline;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 500;
+}
+
+.header_main{
+    width: 40%;
+    margin-top: 100px;
+}
+
+.header_main h3{
+    font-size: 15px;
+    margin: 20px 0;
+}
+
+.header_main h1{
+    margin: 20px 0;
+    font-size: 60px;
+}
+
+.header_button{
+    margin-top: 20px;
+}
+
+.header_box{
+    display: inline-block;
+    font-size: 18px;
+    padding: 0;
+    padding-bottom: 5px;
+    border-bottom: 1px solid white;
+    margin: 8px;
+    margin-top: 100px;
+}
+
+.animations{
+    margin: 100px auto;
+    display: flex;
+}
+
+.animations_levo h3{
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    margin: 0 0 6px;
+}
+
+.animations_levo h1{
+    font-size: 38px;
+    position: relative;
+    padding: 0 0 25px;
+}
+
+.animations_levo h1:after {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 5px;
+    width: 70px;
+    background: #00bfe7;
+    content: "";
+}
+
+.animations_levo p{
+    padding: 0px 0px 45px;
+    width: 400px;
+}
+
+.animations_desno{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.option{
+    width: 350px;
+    margin-bottom: 30px;
+}
+
+.icon_box{
+    border: 2px solid #00bfe7;
+    width: 70px;
+    height: 70px;
+    transition: 1s;
+}
+
+.icon_box i {
+    font-size: 40px;
+    margin: 13px 0 0 15px;
+    transition: 1s;
+}
+
+/* TODO - smother transform */
+.option:hover .icon_box{
+    transform: rotate(45deg);
+}
+
+.option:hover .icon_box i{
+    transform: rotate(-45deg);
+}
+
+/* TODO -use grid for videos section */
+.videos{
+}
+
