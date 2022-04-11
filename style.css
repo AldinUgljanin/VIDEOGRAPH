@@ -80,6 +80,7 @@ p{
 .links span{
     margin: 0 10px;
     padding-bottom: 5px;
+    transition: 0.2s;
 }
 
 .links span:nth-child(1){
@@ -215,7 +216,120 @@ p{
     transform: rotate(-45deg);
 }
 
-/* TODO -use grid for videos section */
 .videos{
+    display: grid; 
+    height: 600px;
+    width: 100%;
+    gap: 10px;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas: 
+	"slika1 slika1 slika2 slika3 slika4 slika4"
+	"slika5 slika6 slika7 slika7 slika4 slika4"
+}
+
+.slika1{
+    position: relative;
+    background-image: url("img/videos_background_01.webp");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+    grid-area: slika1;
+}
+
+.slika2{
+    background-image: url("img/videos_background_02.webp");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+    grid-area: slika2;
+}
+
+.slika3{
+    background-image: url("img/videos_background_03.webp");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+    grid-area: slika3;
+}
+
+.slika4{
+    position: relative;
+    background-image: url("img/videos_background_04.webp");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+    grid-area: slika4;
+}
+
+.slika5{
+    background-image: url("img/videos_background_05.webp");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+    grid-area: slika5;
+}
+
+.slika6{
+    background-image: url("img/videos_background_06.webp");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+    grid-area: slika6;
+}
+
+.slika7{
+    position: relative;
+    background-image: url("img/videos_background_07.webp");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+    grid-area: slika7;
+}
+
+.hover_img{
+    position: absolute;
+    background-color: rgb(0,0,0, 0.6);
+    width: 100%;
+    bottom: 0;
+    height: 0;
+    transition: 0.2s;
+}
+
+.hover_img h1{
+    margin-bottom: 5px;
+}
+
+.hover_img p{
+    margin-top: 0px;
+}
+
+.text_hover{
+    margin-left: 30px;
+    font-size: 0;
+}
+
+.slika1:hover .hover_img{
+    height: 80px;
+}
+
+.slika1:hover .hover_img .text_hover{
+    font-size: 15px;
+}
+
+.slika4:hover .hover_img{
+    height: 80px;
+}
+
+.slika4:hover .hover_img .text_hover{
+    font-size: 15px;
+}
+
+.slika7:hover .hover_img{
+    height: 80px;
+}
+
+.slika7:hover .hover_img .text_hover{
+    font-size: 15px;
 }
 
