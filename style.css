@@ -4,6 +4,15 @@ body{
     background-color: #100028;
     color: white;
     font-family: "Roboto", sans-serif;
+    overflow-y: scroll;
+    scrollbar-width: none; /* Firefox */
+    vertical-align: text-top;
+    box-sizing: border-box;
+}
+
+body::-webkit-scrollbar { /* WebKit */
+    width: 0;
+    height: 0;
 }
 
 header{
@@ -22,6 +31,12 @@ nav{
 
 p{
     color: #ADADAD;
+}
+
+footer{
+    width: 30%;
+    padding: 20px 0;
+    margin: auto;
 }
 
 .centar{
@@ -497,7 +512,6 @@ p{
 }
 
 .blog_post{
-    box-sizing: border-box;
     width: 400px;
     height: 420px;
     padding: 40px;
@@ -546,7 +560,6 @@ p{
 
 .dron{
     height: 470px;
-    margin-bottom: 200px;
     background-image: url("img/dron_bg.webp");
     background-size: cover;
     background-repeat: no-repeat;
@@ -554,7 +567,7 @@ p{
 
 .dron_cont{
     width: 750px;
-    margin: auto auto auto 400px;
+    margin: auto auto auto 300px;
     padding-top: 100px;
 }
 
@@ -572,4 +585,82 @@ p{
     color: white;
     padding: 15px 30px;
     background-color: #00bfe7;
+}
+
+.last{
+    margin-top: 50px;
+}
+
+.last_gore{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #333;
+}
+
+.last_gore .icons {
+   padding: 0px 5px 20px 5px;
+}
+
+.last_gore .icons i{
+    padding: 10px;
+    background-color: #333;
+    border-radius: 50%;
+    margin: 0 5px;
+}
+
+.last_dole{
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 0 50px 0;
+    border-bottom: 1px solid #333;
+}
+
+.prvi_i_pos{
+    width: 350px;
+}
+
+.prvi_i_pos p{
+    color: #ADADAD;
+    line-height: 1.6;
+}
+
+.prvi_i_pos .read_more {
+    margin-top: 20px;
+}
+
+.drugi_i_treci ol{
+    list-style-type: none;
+    padding: 0;
+    color: #ADADAD;
+}
+
+.drugi_i_treci ol li{
+    margin: 10px 0;
+}
+
+.last_input input{
+    width: 250px;
+    height: 30px;
+    border: 1px solid #333;
+    background-color: #100028;
+    color: white;
+    outline: none;
+    padding: 10px;
+    font-size: 20px;
+    margin: 0;
+}
+
+.last_input i{
+    font-size: 20px;
+    color: #ffffff;
+    border: none;
+    height: 50px;
+    width: 50px;
+    background: #00bfe7;
+    line-height: 50px;
+    text-align: center;
+}
+
+.blue{
+    color: #007bff;
 }
